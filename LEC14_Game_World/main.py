@@ -21,14 +21,15 @@ def handle_events():
 def reset_world():
     global boy
 
+    grass2 = Grass2()
+    game_world.add_object(grass2,2)
+    
     boy = Boy()
     game_world.add_object(boy, 1)
     
     grass = Grass()
     game_world.add_object(grass, 0)
 
-    grass2 = Grass2()
-    game_world.add_object(grass,2)
 
 def update_world():
     game_world.update()
